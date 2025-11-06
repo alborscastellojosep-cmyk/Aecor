@@ -8,6 +8,7 @@
 <meta name="author" content="Josep">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="../css/autismo.css">
+<script src="../js/pesca.js" defer></script>
 </head>
 
 <body>
@@ -15,6 +16,7 @@
     <header>   
         <h1>Aecor, mapas a la deriva. <img src="../Imagenes/favicon.jpg" alt="Logo Aecor"></h1>
     </header>
+
 <nav>
     <ul>
         <li><a href="../index.html">Index</a></li>
@@ -24,36 +26,62 @@
         <li><a href="Bitacoras.html">Bitácoras</a></li> 
     </ul>
 </nav>
+
+<h2>Simulador de Pesca</h2>
+<img src="../Imagenes/pez.gif" alt="Simulador de Pesca" style="width: 300px; height: auto;">
+
+<form id="pescaForm">
+    <label for="dadoCompetencia">Elige tu dado de competencia:</label>
+    <select id="dadoCompetencia" required>
+        <option value="4">D4</option>
+        <option value="6">D6</option>
+        <option value="8">D8</option>
+        <option value="10">D10</option>
+        <option value="12">D12</option>
+    </select>
+
+    <label for="horas">¿Cuántas horas has pescado?</label>
+    <input type="number" id="horas" min="1" max="24" required>
+
+    <button type="submit">Tirar dados</button>
+</form>
+
+<div id="resultados"></div>
+
 <main>
  <article>
   <header>
     <img src="#" alt="w">
     <h2>w</h2>
   </header>
- <p></p>
+  <p></p>
  </article>
+
  <article>
- <header>
+  <header>
     <img src="#" alt="x">
     <h2>x</h2>
   </header>
- <p></p>
-</article>
+  <p></p>
+ </article>
+
  <article>
   <header>
     <img src="#" alt="y">
     <h2>y</h2>
   </header>
- <p></p>
+  <p></p>
  </article>
-  <article>
+
+ <article>
   <header>
     <img src="#" alt="z">
     <h2>z</h2>
   </header>
- <p></p>
+  <p></p>
  </article>
 </main>
+
 </div>
 </body>
 </html>
